@@ -14,7 +14,12 @@
   <!-- Password Screen -->
   <div id="gate-screen" class="container">
     <h1>Access Portal</h1>
-    <input type="password" id="password-input" placeholder="Enter Access Code">
+    
+    <div class="password-wrapper">
+      <input type="password" id="password-input" placeholder="Enter Access Code">
+      <button type="button" id="toggle-pw-btn" class="toggle-pw" aria-label="Toggle password visibility">👁️</button>
+    </div>
+
     <div id="error-message" class="error-msg hidden">Incorrect Code. Try again.</div>
     <button class="btn btn-primary" id="login-btn">Enter System</button>
   </div>
