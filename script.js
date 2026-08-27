@@ -1,13 +1,13 @@
 // Set password here
-const ACCESS_CODE = "I will beat camron one day";
+const ACCESS_CODE = "space123";
 
 const gateScreen = document.getElementById("gate-screen");
 const homeScreen = document.getElementById("home-screen");
 const passwordInput = document.getElementById("password-input");
 const errorMessage = document.getElementById("error-message");
 const loginBtn = document.getElementById("login-btn");
-const casualBtn = document.getElementById("casual-btn");
-const rankedBtn = document.getElementById("ranked-btn");
+const chessBtn = document.getElementById("chess-btn");
+const checkersBtn = document.getElementById("checkers-btn");
 
 function unlockSite() {
   if (passwordInput.value === ACCESS_CODE) {
@@ -27,10 +27,10 @@ passwordInput.addEventListener("keypress", function(e) {
   }
 });
 
-casualBtn.addEventListener("click", function() {
-  alert("Launching Casual Mode...");
+chessBtn.addEventListener("click", function() {
+  alert("Launching Chess...");
 });
 
-rankedBtn.addEventListener("click", function() {
-  alert("Launching Ranked Mode...");
+checkersBtn.addEventListener("click", function() {
+  alert("Launching Checkers...");
 });
