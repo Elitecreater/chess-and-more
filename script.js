@@ -1,9 +1,10 @@
 // Set password here
-const ACCESS_CODE = "eloimprover";
+const ACCESS_CODE = "space123";
 
 const gateScreen = document.getElementById("gate-screen");
 const homeScreen = document.getElementById("home-screen");
 const passwordInput = document.getElementById("password-input");
+const togglePwBtn = document.getElementById("toggle-pw-btn");
 const errorMessage = document.getElementById("error-message");
 const loginBtn = document.getElementById("login-btn");
 const chessBtn = document.getElementById("chess-btn");
@@ -17,6 +18,13 @@ function unlockSite() {
     errorMessage.classList.remove("hidden");
   }
 }
+
+// Toggle Password Visibility
+togglePwBtn.addEventListener("click", function() {
+  const isPassword = passwordInput.getAttribute("type") === "password";
+  passwordInput.setAttribute("type", isPassword ? "text" : "password");
+  togglePwBtn.textContent = isPassword ? "🙈" : "👁️";
+});
 
 // Event Listeners
 loginBtn.addEventListener("click", unlockSite);
