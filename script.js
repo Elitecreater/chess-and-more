@@ -1,5 +1,5 @@
 // Set password here
-const ACCESS_CODE = "space123";
+const ACCESS_CODE = "I will beat camron one day";
 
 const gateScreen = document.getElementById("gate-screen");
 const homeScreen = document.getElementById("home-screen");
