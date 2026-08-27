@@ -41,7 +41,8 @@ chessBtn.addEventListener("click", function() {
 
 checkersBtn.addEventListener("click", function() {
   alert("Launching Checkers...");
-});<!DOCTYPE html>
+});
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
