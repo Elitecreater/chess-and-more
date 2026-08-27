@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Gaming Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="stars"></div>
+  <div class="nebula"></div>
+
+  <!-- Password Screen -->
+  <div id="gate-screen" class="container">
+    <h1>Access Portal</h1>
+    <input type="password" id="password-input" placeholder="Enter Access Code">
+    <div id="error-message" class="error-msg hidden">Incorrect Code. Try again.</div>
+    <button class="btn btn-primary" id="login-btn">Enter System</button>
+  </div>
+
+  <!-- Main Screen (Revealed After Password) -->
+  <div id="home-screen" class="container hidden">
+    <h1>Welcome to players of all ELO's</h1>
+    <button class="btn btn-primary" id="casual-btn">Play Casual</button>
+    <button class="btn btn-secondary" id="ranked-btn">Play Ranked</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
