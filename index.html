@@ -11,7 +11,6 @@
   <div class="stars"></div>
   <div class="nebula"></div>
 
-  <!-- Password Screen -->
   <div id="gate-screen" class="container">
     <h1>Access Portal</h1>
     
@@ -24,11 +23,15 @@
     <button class="btn btn-primary" id="login-btn">Enter System</button>
   </div>
 
-  <!-- Main Screen (Revealed After Password) -->
   <div id="home-screen" class="container hidden">
     <h1>Welcome to players of all ELO's</h1>
-    <button class="btn btn-primary" id="chess-btn">Chess</button>
-    <button class="btn btn-secondary" id="checkers-btn">Checkers</button>
+    <div class="button-grid">
+      <button class="btn btn-primary" id="chess-btn">Chess</button>
+      <button class="btn btn-secondary" id="checkers-btn">Checkers</button>
+      <button class="btn btn-secondary" id="ludo-btn">Ludo</button>
+      <button class="btn btn-secondary" id="catan-btn">Catan</button>
+      <button class="btn btn-secondary" id="tcgcp-btn">Taco Cat Goat Cheese Pizza</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
