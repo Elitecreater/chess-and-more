@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic 4-Player Ludo (With Safe Spots)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+</head>
+<body>
+
+<h1>4-Player Ludo (4 Tokens Per Player)</h1>
+
+<div id="setup">
+    <div>
+        <input type="text" id="custom-id-input" placeholder="Enter Room Code">
+        <button class="btn-blue" onclick="createHost()">Host Room</button>
+        <button onclick="joinGame()">Join Room</button>
+    </div>
+    <div style="margin-top: 5px;">
+        <button id="add-bot-btn" class="btn-orange" onclick="addBot()" disabled>+ Add Bot</button>
+        <button id="remove-bot-btn" class="btn-red" onclick="removeBot()" disabled>- Remove Bot</button>
+    </div>
+    <div id="host-status" style="margin-top: 8px; font-weight: bold;"></div>
+    <div id="player-list" style="margin-top:8px; font-size: 14px;">Slots: Red (Host), Green (Empty), Yellow (Empty), Blue (Empty)</div>
+</div>
+
+<div id="status-bar">Enter or create a room code to start...</div>
+
+<div id="board-wrapper">
+    <div id="board"></div>
+</div>
+
+<div>
+    <button id="roll-btn" onclick="rollDice()" disabled>Roll Dice</button>
+    <span id="dice-val" style="font-size: 22px; margin-left:10px;">🎲 -</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
