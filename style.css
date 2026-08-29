@@ -126,6 +126,7 @@ input:focus {
   gap: 0.75rem;
 }
 
+/* Unified Button Styling (Chess Gradient for All) */
 .btn {
   width: 100%;
   padding: 12px 20px;
@@ -136,28 +137,15 @@ input:focus {
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
+  background: linear-gradient(135deg, #7000ff, #00f0ff);
+  color: #fff;
   transition: all 0.3s ease;
 }
 
-.btn-primary {
-  background: linear-gradient(135deg, #7000ff, #00f0ff);
-  color: #fff;
-}
-
-.btn-primary:hover {
+.btn:hover {
   opacity: 0.9;
   box-shadow: 0 0 15px rgba(0, 240, 255, 0.6);
-}
-
-.btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(0, 240, 255, 0.4);
+  transform: translateY(-1px);
 }
 
 .error-msg {
