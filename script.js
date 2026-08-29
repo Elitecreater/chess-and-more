@@ -15,6 +15,7 @@ const backBtn = document.getElementById("back-btn");
 
 // Game Buttons
 const chessBtn = document.getElementById("chess-btn");
+const chess3dBtn = document.getElementById("chess-3d-btn");
 const checkersBtn = document.getElementById("checkers-btn");
 const ludoBtn = document.getElementById("ludo-btn");
 const catanBtn = document.getElementById("catan-btn");
@@ -50,51 +51,51 @@ backBtn.addEventListener("click", () => {
   gameCodeArea.innerHTML = ""; // Clears game code when exiting
 });
 
-// --- PUT YOUR GAME CODE HERE ---
-
-// Helper function to launch game code
+// --- GAME CODE LOADER ---
 function loadGameCode(htmlCode) {
   homeScreen.classList.add("hidden");
   gameScreen.classList.remove("hidden");
   gameCodeArea.innerHTML = htmlCode;
 }
 
-// 1. Chess Button (Put your Chess HTML/JS inside the template string)
+// 1. Chess Button
 chessBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Chess Game</h2>
-    <p>Put your custom Chess HTML/JS canvas or board code here!</p>
   `);
 });
 
-// 2. Checkers Button
+// 2. Chess 3D Button
+chess3dBtn.addEventListener("click", () => {
+  loadGameCode(`
+    <h2>Chess 3D Game</h2>
+  `);
+});
+
+// 3. Checkers Button
 checkersBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Checkers Game</h2>
-    <p>Put your custom Checkers HTML/JS board code here!</p>
   `);
 });
 
-// 3. Ludo Button
+// 4. Ludo Button
 ludoBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Ludo Game</h2>
-    <p>Put your custom Ludo HTML/JS board code here!</p>
   `);
 });
 
-// 4. Catan Button
+// 5. Catan Button
 catanBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Catan Game</h2>
-    <p>Put your custom Catan HTML/JS code here!</p>
   `);
 });
 
-// 5. Taco Cat Goat Cheese Pizza Button
+// 6. Taco Cat Goat Cheese Pizza Button
 tcgcpBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Taco Cat Goat Cheese Pizza</h2>
-    <p>Put your custom card game code here!</p>
   `);
 });
