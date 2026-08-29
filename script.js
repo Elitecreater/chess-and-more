@@ -84,6 +84,10 @@ chess3dBtn.addEventListener("click", () => {
 checkersBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Checkers Game</h2>
+    <iframe 
+      src="checkers.html" 
+      style="width: 100%; height: 650px; border: none; border-radius: 8px;">
+    </iframe>
   `);
 });
 
@@ -91,6 +95,10 @@ checkersBtn.addEventListener("click", () => {
 ludoBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Ludo Game</h2>
+    <iframe 
+      src="ludo.html" 
+      style="width: 100%; height: 650px; border: none; border-radius: 8px;">
+    </iframe>
   `);
 });
 
@@ -98,6 +106,10 @@ ludoBtn.addEventListener("click", () => {
 catanBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Catan Game</h2>
+    <iframe 
+      src="catan.html" 
+      style="width: 100%; height: 650px; border: none; border-radius: 8px;">
+    </iframe>
   `);
 });
 
@@ -105,5 +117,9 @@ catanBtn.addEventListener("click", () => {
 tcgcpBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Taco Cat Goat Cheese Pizza</h2>
+    <iframe 
+      src="TCGCP.html" 
+      style="width: 100%; height: 650px; border: none; border-radius: 8px;">
+    </iframe>
   `);
 });
