@@ -62,6 +62,7 @@ function loadGameCode(htmlCode) {
 chessBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Chess Game</h2>
+    
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1554,6 +1555,7 @@ chessBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
   `);
 });
 
