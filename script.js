@@ -40,8 +40,22 @@ passwordInput.addEventListener("keypress", function(e) {
 });
 
 // Game Selection Listeners
-chessBtn.addEventListener("click", () => alert("Chess selected!"));
-checkersBtn.addEventListener("click", () => alert("Checkers selected!"));
-ludoBtn.addEventListener("click", () => alert("Ludo selected!"));
-catanBtn.addEventListener("click", () => alert("Catan selected!"));
-tcgcpBtn.addEventListener("click", () => alert("Taco Cat Goat Cheese Pizza selected!"));
+chessBtn.addEventListener("click", () => {
+  window.location.href = "https://www.chess.com"; 
+});
+
+checkersBtn.addEventListener("click", () => {
+  window.location.href = "https://www.247checkers.com"; 
+});
+
+ludoBtn.addEventListener("click", () => {
+  window.location.href = "https://ludo-king.com"; 
+});
+
+catanBtn.addEventListener("click", () => {
+  window.location.href = "https://catanuniverse.com"; 
+});
+
+tcgcpBtn.addEventListener("click", () => {
+  window.location.href = "https://boardgamearena.com"; 
+});
