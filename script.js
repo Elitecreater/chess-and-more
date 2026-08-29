@@ -62,6 +62,10 @@ function loadGameCode(htmlCode) {
 chessBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Chess Game</h2>
+    <iframe 
+      src="chess.html" 
+      style="width: 100%; height: 650px; border: none; border-radius: 8px;">
+    </iframe>
   `);
 });
 
