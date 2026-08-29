@@ -98,12 +98,3 @@ tcgcpBtn.addEventListener("click", () => {
     <p>Put your custom card game code here!</p>
   `);
 });
-
-// 6. chess 3d
-tcgcpBtn.addEventListener("click", () => {
-  loadGameCode(`
-    <h2>chess 3d</h2>
-    <p>Put your custom card game code here!</p>
-  `);
-});
-
