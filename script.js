@@ -73,6 +73,10 @@ chessBtn.addEventListener("click", () => {
 chess3dBtn.addEventListener("click", () => {
   loadGameCode(`
     <h2>Chess 3D Game</h2>
+    <iframe
+    src="chess3d.html"
+    style="width: 100%; height: 650px; border: none; border-radius: 8px;">
+    </iframe>
   `);
 });
 
