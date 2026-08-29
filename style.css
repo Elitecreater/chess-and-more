@@ -13,13 +13,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 
 /* Radial gradient overlay for deep space nebula */
 .nebula {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -30,7 +30,7 @@ body {
 
 /* Dynamic CSS Stars */
 .stars {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -51,15 +51,16 @@ body {
 .container {
   position: relative;
   z-index: 2;
-  background: rgba(15, 23, 42, 0.75);
+  background: rgba(15, 23, 42, 0.85);
   border: 1px solid rgba(112, 0, 255, 0.4);
   box-shadow: 0 0 30px rgba(112, 0, 255, 0.2);
   backdrop-filter: blur(10px);
   padding: 2.5rem;
   border-radius: 12px;
   text-align: center;
-  max-width: 450px;
+  max-width: 480px;
   width: 90%;
+  margin: 20px 0;
 }
 
 .hidden {
@@ -68,7 +69,7 @@ body {
 
 /* Form & Typography */
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -118,19 +119,24 @@ input:focus {
   opacity: 1;
 }
 
-/* Buttons */
+/* Button Layout */
+.button-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
 .btn {
   width: 100%;
   padding: 12px 20px;
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-bottom: 0.75rem;
 }
 
 .btn-primary {
@@ -151,6 +157,7 @@ input:focus {
 
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(0, 240, 255, 0.4);
 }
 
 .error-msg {
