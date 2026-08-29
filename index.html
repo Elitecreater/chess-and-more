@@ -11,6 +11,7 @@
   <div class="stars"></div>
   <div class="nebula"></div>
 
+  <!-- Password Screen -->
   <div id="gate-screen" class="container">
     <h1>Access Portal</h1>
     
@@ -23,10 +24,12 @@
     <button class="btn" id="login-btn">Enter System</button>
   </div>
 
+  <!-- Main Screen (Revealed After Password) -->
   <div id="home-screen" class="container hidden">
     <h1>Welcome to players of all ELO's</h1>
     <div class="button-grid">
       <button class="btn" id="chess-btn">Chess</button>
+      <button class="btn" id="chess-3d-btn">Chess 3D</button>
       <button class="btn" id="checkers-btn">Checkers</button>
       <button class="btn" id="ludo-btn">Ludo</button>
       <button class="btn" id="catan-btn">Catan</button>
@@ -34,6 +37,7 @@
     </div>
   </div>
 
+  <!-- Game Screen (Where your game code will run) -->
   <div id="game-screen" class="container hidden" style="max-width: 800px;">
     <button class="btn" id="back-btn" style="margin-bottom: 1rem;">← Back to Menu</button>
     <div id="game-code-area"></div>
